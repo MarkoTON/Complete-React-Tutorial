@@ -22,6 +22,10 @@ const Home = () => {
     <div className="home">
       { isPending && <div>Loading...</div> }
       {blogs && <BlogList blogs={blogs} />}
+
+      {/* { 
+        !blogs && <div>Loading...</div> || <BlogList blogs={blogs} />
+      } */}
     </div>
   );
 }
