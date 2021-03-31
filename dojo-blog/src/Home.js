@@ -3,7 +3,8 @@ import BlogList from "./BlogList";
 import useFetch from "./useFetch";
 
 const Home = () => {
-  const { error, isPending, data: blogs } = useFetch('http://localhost:8000/blogs')
+  // Order is not important, you just need to have same name
+  const { data: blogs, error, isPending } = useFetch('http://localhost:8000/blogs')
 
   return (
     <div className="home">
