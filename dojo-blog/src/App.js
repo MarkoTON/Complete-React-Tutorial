@@ -4,7 +4,12 @@ function App() {
   const title = 'Welcome to the new blog';
   const likes = 50;
   // const person = { name: 'yoshi', age: 30 };
+  const boolianVal = false
   const link = 'http://www.google.com';
+
+  function test () {
+    return 'Metallica'
+  }
 
   return (
     <div className="App">
@@ -18,7 +23,10 @@ function App() {
         <p>{ "hello, ninjas" }</p>
         <p>{ [1,2,3,4,5] }</p>
         <p>{ Math.random() * 10 }</p>
-
+        <hr />
+        {test()}
+        <hr />
+        <p style={{backgroundColor : "red"}}>Boolian: {boolianVal}</p>
         <a href={link}>Google Site</a>
       </div>
     </div>
