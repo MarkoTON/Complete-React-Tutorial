@@ -8,7 +8,9 @@ function App() {
       <div className="App">
         <Navbar />
         <div className="content">
+          {/* Switch je tu da obezbedi da samo jedan rout bude prisutan u tom trenutku */}
           <Switch>
+            {/* Ruta za home page */}
             <Route path="/">
               <Home />
             </Route>
