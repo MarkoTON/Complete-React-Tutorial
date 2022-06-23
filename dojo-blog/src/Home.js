@@ -11,8 +11,12 @@ const Home = () => {
       fetch('http://localhost:8000/blogs')
       .then(res => {
         if (!res.ok) { // error coming back from server
-          throw Error('could not fetch the data for that resource');
+          throw Error('could not fetch the data for that resource!');
         } 
+        // Ako recimo ostavimd abude ok onda ce on odmah preci na .catch i nece vratiti respons
+        // if(res.ok) {
+        //   throw Error('could not fetch the data for that resource!!');
+        // }
         return res.json();
       })
       .then(data => {
