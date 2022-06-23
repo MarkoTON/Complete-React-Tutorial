@@ -4,11 +4,11 @@ import useFetch from "./useFetch";
 
 const Home = () => {
   // Order is not important, you just need to have same name
-  const { data: blogs, error, isPending } = useFetch('http://localhost:8000/blogs')
+  const { data: blogs, error:korn, isPending } = useFetch('http://localhost:8000/blogs')
 
   return (
     <div className="home">
-      { error && <div>{ error }</div> }
+      { korn && <div>{ korn }</div> }
       { isPending && <div>Loading...</div> }
       { blogs && <BlogList blogs={blogs} /> }
     </div>
