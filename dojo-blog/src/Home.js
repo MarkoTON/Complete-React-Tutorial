@@ -2,7 +2,8 @@ import { useState } from "react";
 
 const Home = () => {
   // let name = 'mario';
-  const [name, setName] = useState('mario');
+  let checkIfWillWork = 'Sepultura'
+  const [name, setName] = useState(checkIfWillWork);
   const [age, setAge] = useState(25);
 
   const handleClick = () => {
