@@ -19,8 +19,11 @@ const Home = () => {
 
       <hr/>
 
-      {blogs.map((blog,keyID) => (
+      {blogs.map((blog,keyID,limun,korn) => (
         <div className="blog-preview" key={keyID} >
+          {console.log(keyID)}
+          {console.log(limun)}
+          {console.log(korn)}
           <h2>{ blog.title }</h2>
           <p>Written by { blog.author }</p>
         </div>
