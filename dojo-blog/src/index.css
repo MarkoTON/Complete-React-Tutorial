@@ -101,3 +101,7 @@
   border-radius: 8px;
   cursor: pointer;
 }
+
+.create span {
+  color: red;
+}
